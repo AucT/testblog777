@@ -1,0 +1,8 @@
+<nav class="pagination" role="navigation" style="margin-bottom: 5rem;">
+  {{if .HasPrev}}
+  <a href="{{ .Prev.URL }}">&larr; Newer Posts</a>
+  {{end}}
+  {{if .HasNext}}
+  <a style="float:right;" href="{{ .Next.URL }}">Older Posts &rarr;</a>
+  {{end}}
+</nav>

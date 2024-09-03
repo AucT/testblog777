@@ -1,0 +1,39 @@
+baseURL = "https://tech.auct.eu/"
+languageCode = "en-us"
+title = "Tech Blog"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+theme = "hugo"
+
+disableKinds = ["section"]
+
+googleAnalytics = ""
+disqusShortname = ""
+
+paginate = 20
+rssLimit = 1000
+[permalinks]
+    posts = "/:slug/"
+    pages = "/:title/"
+
+[taxonomies]
+    tag = "tags"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/AucT"
+
+[author]
+    name = "AucT"	
+	
+[params]
+	jsonLdRender = "false"
+    mainSections = ["posts"]
+    description = "Code snippets for ubuntu administration, scripts for lamp / lemp stacks"
+[markup]
+  [markup.highlight]
+    style = 'manni'
+    noClasses = false
+    
