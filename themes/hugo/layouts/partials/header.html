@@ -14,8 +14,9 @@
     <link rel="apple-touch-icon" href="/icon.png">
     <meta name="theme-color" content="#fafafa"> {{ template "_internal/opengraph.html" . }} {{ template "_internal/schema.html" . }}
 
-    <link rel="stylesheet" href="/style.css?v11">
-    <link rel="stylesheet" href="/highlight.css">
+    <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "highlight.css" | relURL }}">
+
     {{ range .AlternativeOutputFormats -}} {{ printf `
     <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }} {{ end -}}
 </head>
