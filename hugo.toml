@@ -12,6 +12,10 @@ disqusShortname = ""
 
 paginate = 20
 rssLimit = 1000
+
+[build]
+    minify = true
+
 [permalinks]
     posts = "/:slug/"
     pages = "/:title/"
